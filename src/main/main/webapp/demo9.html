@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Hello World</title>
 
+<!-- sapui5 组件方式 -->
 <script id='sap-ui-bootstrap'
     src='resources/sap-ui-core.js'
     data-sap-ui-theme='sap_bluecrystal'
@@ -19,8 +20,8 @@
 
 <script>
          sap.ui.getCore().attachInit(function () {
-          new sap.ui.xmlview({
-        	viewName:"sap.ui.demo.wt.view.demo9"  
+          new sap.ui.core.ComponentContainer({
+        	name:"sap.ui.demo.wt.component.demo9"  
           }).placeAt("content");
          });
 </script>
